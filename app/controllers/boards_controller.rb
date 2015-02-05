@@ -15,7 +15,7 @@ class BoardsController < ApplicationController
   # GET /boards
   # GET /boards.json
   def index
-    @boards = Board.all
+    @boards = Board.all 
   end
 
   # GET /boards/1
@@ -36,6 +36,8 @@ class BoardsController < ApplicationController
   # POST /boards.json
   def create
     @board = Board.new(board_params)
+    @board.user = current_user 
+
 
     respond_to do |format|
       if @board.save
