@@ -79,7 +79,7 @@ class UsersController < ApplicationController
     User.delete_all 
 
     respond_to do |format|
-      format.html { redirect_to users_url, notice: 'All users were successfully deleted.'}
+      format.html { redirect_to "/boards/new", notice: 'All users were successfully deleted.'}
       format.json { head :no_users} 
     end
   end

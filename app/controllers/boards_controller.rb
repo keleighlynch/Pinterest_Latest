@@ -1,6 +1,17 @@
 class BoardsController < ApplicationController
   before_action :set_board, only: [:show, :edit, :update, :destroy]
 
+   def delete_all
+
+    Board.delete_all 
+
+    respond_to do |format|
+
+      format.html {redirect_to boards_url }
+      format.json {head :no_content }
+    end
+  end
+
   # GET /boards
   # GET /boards.json
   def index
