@@ -14,6 +14,14 @@
  *= require_self
  */
 
+ .image_field { 
+ 	text-align: center;
+ }
+
+.image_field input {
+	text-align: center;
+}
+
 .jumbotron {
 	opacity: 0.6%;
 	width: 1000px;
@@ -40,13 +48,13 @@ table {
 	border-collapse: collapse;
 	background-color: black;
 	color: white;
-	opacity: 0.8;
+	opacity: 1.0;
 }
 
 
 th {
 	height: 40px;
-	background-color: solid black;
+	background-color: transparent;
 	color: gold;
 	font-size: 20px;
 	text-align: center;

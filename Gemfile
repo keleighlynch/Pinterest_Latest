@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.3.3'
